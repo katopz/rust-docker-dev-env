@@ -1,0 +1,1 @@
+docker run --rm --user "$(id -u)":"$(id -g)" -v "$PWD/example":/usr/src/app -w /usr/src/app rust:1.59.0 cargo build --release
