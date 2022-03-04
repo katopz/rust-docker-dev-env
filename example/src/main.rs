@@ -26,7 +26,7 @@ async fn main() {
 
   let make_svc = make_service_fn(|_socket: &AddrStream| async move {
       Ok::<_, Infallible>(service_fn(move |_: Request<Body>| async move {
-          let mut hello = "Hello ".to_string();
+          let mut hello = "Hello !".to_string();
           match env::var("TARGET") {
               Ok(target) => {
                   hello.push_str(&target);

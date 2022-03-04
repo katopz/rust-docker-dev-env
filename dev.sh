@@ -5,4 +5,4 @@ docker run -it \
 -p 9090:9090 \
 -v $(pwd)/example:/usr/app \
 katopz/rust-dev-env:1.59.0 \
-watch-run.sh .
+build-continuously.sh .

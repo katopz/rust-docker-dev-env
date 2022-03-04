@@ -4,8 +4,8 @@ default: build ;
 
 RUST_VERSION := 1.59.0
 IMAGE_USER := katopz
-IMAGE_NAME := rust-dev-env-origin
-DOCKER_FILE := ./origin.Dockerfile
+IMAGE_NAME := rust-dev-env
+DOCKER_FILE := ./Dockerfile
 IMAGE := $(IMAGE_USER)/$(IMAGE_NAME)
 
 build:
